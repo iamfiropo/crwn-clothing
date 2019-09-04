@@ -33,10 +33,10 @@ const Header = ({ currentUser }) => (
   </div>
 )
 
-const mapStateToProps = state => ({
+const mapStateToProps = ({ user }) => ({
   /**
    * currentUser=state=>rootReducer property(user)=>userReducer
    */
-  currentUser: state.user.currentUser,
+  currentUser: user.currentUser,
 })
 export default connect(mapStateToProps)(Header);
