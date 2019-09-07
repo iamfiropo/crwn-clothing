@@ -7,9 +7,14 @@
   padding: 20px;
   border: 1px solid black;
   background-color: white;
-  top: 80px;
-  right: 0;
+  top: 90px;
+  right: 40px;
   z-index: 5;
+
+  .empty-message {
+    font-size: 18px;
+    margin: 50px auto;
+  }
 
   .cart-items {
     height: 240px;
@@ -18,7 +23,7 @@
     overflow: scroll;
   }
 
-  button {
+  .button {
     margin-top: auto;
   }
 }
