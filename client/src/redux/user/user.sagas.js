@@ -53,9 +53,9 @@ export function* isUserAuthenticated() {
   try {
     const userAuth = yield getCurrentUser();
     if(!userAuth) return;
-    yield getSnapshotFromUserAuth(userAuth)
+    yield getSnapshotFromUserAuth(userAuth);
   } catch(error) {
-    yield put(signInFailure(error))
+    yield put(signInFailure(error));
   }
 }
 
@@ -64,7 +64,7 @@ export function* signOut() {
     yield auth.signOut();
     yield put(signOutSuccess());
   } catch(error) {
-    yield put(signOutFailure(error))
+    yield put(signOutFailure(error));
   }
 }
 
